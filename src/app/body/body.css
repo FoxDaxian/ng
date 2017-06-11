@@ -1,0 +1,88 @@
+.bodyWrap{
+	padding: 10px;
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	margin-bottom: 12px;
+}
+.operate{
+	width: 500px;
+	margin:0 auto 8px;
+	text-align: center;
+	display: table;
+}
+.operate input{
+	display: table-cell;
+	vertical-align: middle;
+}
+[type="text"]{
+	padding: 6px 8px;
+	font-size: 14px;
+	width: 350px;
+	margin-right: 4px;
+}
+[type="button"]{
+	outline: none;
+	border:1px solid #aaa;
+	background-color: #fff;
+	color:#000;
+	width: 80px;
+	height: 33px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+[type="button"]:active{
+	border-color:#4D90FE;
+}
+.content{
+	width: 500px;	
+	margin:0 auto;
+}
+.content ul li{
+	background-color: #fff;
+	position: relative;
+}
+.content ul li:nth-of-type(2n){
+	background-color: #ececec;
+}
+.content ul li{
+	text-align: center;
+	font-size: 16px;
+	padding: 8px 6px;
+	cursor: pointer;
+	transition:0.2s;
+	position: relative;
+}
+.content ul li:hover{
+	background-color: #B52D30;
+	color:#fff;
+}
+.content ul li:hover:after{
+	display: block;
+}
+.content ul li:after{
+	display: none;
+	content:"点击删除";
+	position: absolute;
+	height: 33px;
+	line-height: 33px;
+	width: 100%;
+	background-color: rgba(181, 45, 48, 1);
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+.tips{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100vh;
+	z-index: -1;
+}

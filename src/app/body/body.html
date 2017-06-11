@@ -1,0 +1,13 @@
+<div class="bodyWrap">
+	<h1>ToDoList</h1>
+	<div class="operate">
+		<input type="text" placeholder="请输入您想添加的事项" maxlength="30" #text>
+		<input type="button" value="确定" (click)="addOne(text)">
+	</div>
+	<div class="tips" *ngIf="ToDoListData.length === 0" @fadeIn>当前无事项</div>
+	<div class="content" *ngIf="ToDoListData.length !== 0">
+		<ul>
+			<li *ngFor="let item of ToDoListData; let i = index" (click)="deleteThis(i)" @fadeIn>{{item}}</li>
+		</ul>
+	</div>
+</div>
